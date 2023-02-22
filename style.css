@@ -1,33 +1,95 @@
-.meme-generator {
-  font-family: "Roboto", sans-serif;
-  text-align: center;
+body {
+  background-color: #1d2326;
+  color: #bfa38a;
+  font-family: monospace;
 }
 
-.meme-generator img {
-  height: 430px;
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.content img {
+  max-height: 400px;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
 }
 
-.meme-generator .generate-meme-btn {
-  padding: 8px 20px;
-  border: none;
-  border-left: 4px solid #222;
-  border-right: 4px solid #222;
-  margin: 24px 0;
-  font-size: 20px;
-  color: #f64d4d;
-  background: #fff;
-  cursor: pointer;
-  transition: all 400ms ease;
+p {
+  color: #8097a6;
 }
 
-.meme-generator .generate-meme-btn:hover {
+.attribution {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  font-size: 0.8rem;
+  background-color: #8097a6;
+  padding: 10px;
+  border-radius: 5px;
+  color: #1d2326;
+  box-shadow: 1px 2px 5px 1px rgba(255, 255, 255, 0.2);
+}
+
+.social {
+  text-decoration: none;
+  background: linear-gradient(to right, #833ab4, #fd1d1d, #f77737, #fcaf45);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.social:hover {
+  opacity: 0.8;
+}
+
+.content {
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 20px;
+  padding-top: 30px;
+}
+
+.sidebar {
+  display: flex;
+  width: 30%;
+  padding-left: 30px;
+  padding-right: 30px;
+  height: auto;
+}
+
+.content .generate-meme-btn {
+  text-align: center;
+  width: 200px;
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 45px;
+  border: 1px solid #bfa38a;
+  background: transparent;
+  color: #bfa38a;
+  border-radius: 5px;
+}
+
+.content .generate-meme-btn:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.1);
   padding: 8px 36px;
   border-left: 8px solid #222;
   border-right: 8px solid #222;
-  letter-spacing: 3px;
+  letter-spacing: 5px;
+  height: auto;
 }
 
-.meme-generator .meme-author {
+.content .meme-author {
+  text-align: center;
   margin: 8px;
+  font-size: 20px;
+}
+
+.logo {
+  margin: 50px 0 20px;
+  text-align: center;
+  width: 100%;
+  color: black;
 }
